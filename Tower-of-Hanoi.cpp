@@ -142,9 +142,9 @@ void play(){
 		
 		if( win() ){
 			system("cls");
-			cout<<"============================================================"<<endl;
-			cout<<"                           YOU WIN                          "<<endl;
-			cout<<"============================================================"<<endl;
+			gotoxy(10,3); cout<<"============================================================"<<endl;
+			gotoxy(10,4); cout<<"                           YOU WIN                          "<<endl;
+			gotoxy(10,5); cout<<"============================================================"<<endl;
 			cout<<endl<<endl<<endl;
 			cout<<"Press any key to go back to menu...";
 			getch();
@@ -191,8 +191,8 @@ int main()
 		gotoxy(10,5); cout<<" -------------------------------------------------------------------------------------------------- "; 
 		gotoxy(10,6); cout<<" |                                      Tower of Hanoi                                            | "; 
 		gotoxy(10,7); cout<<" --------------------------------------------------------------------------------------------------";
-		gotoxy(10,10);  cout<<"                                       1. Start Game";
-		gotoxy(10,12); cout<<"                                       2. Instructions";	 
+		gotoxy(10,10); cout<<"                                       1. Start Game";
+		gotoxy(10,12); cout<<"                                       2. How To Win";	 
 		gotoxy(10,14); cout<<"                                       3. Quit";
 		gotoxy(10,17); cout<<"                                       Select option: ";
 		char op = getche();
